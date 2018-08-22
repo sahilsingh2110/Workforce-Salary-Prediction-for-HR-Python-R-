@@ -29,7 +29,7 @@ y_pred = predict(regressor, data.frame(Level = 6.5))
 
 # Visualizing the Decision Tree Regression model results
 #library(ggplot2)
-#ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(regressor, newdata = dataset)), color = "blue") + ggtitle("Truth or Bluff(Random FOrest Regression)") + xlab("Level")+ ylab("Salary")
+#ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(regressor, newdata = dataset)), color = "blue") + ggtitle("Workforce_Salary_Analysis(Random Forest Regression)") + xlab("Level")+ ylab("Salary")
 # division of x -axis independent variable into a number of intervals
 x_grid = seq(min(dataset$Level), max(dataset$Level), 0.01)
 ggplot() +
@@ -37,7 +37,7 @@ ggplot() +
              colour = 'red') +
   geom_line(aes(x = x_grid, y = predict(regressor, newdata = data.frame(Level = x_grid))),
             colour = 'blue') +
-  ggtitle('Lie_Detection_Analysis (Random Forest Model)') +
+  ggtitle(' Workforce_Salary_Analysis(Random Forest Model)') +
   xlab('Level') +
   ylab('Salary')
 
