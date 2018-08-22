@@ -20,7 +20,7 @@ dataset = dataset[2:3]
 library(ggplot2)
 lin_reg = lm(formula= Salary ~ ., data = dataset)
 # Visualizing the Linear Regression model
-ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(lin_reg, newdata = dataset)), color = "blue") + ggtitle("Truth or Bluff(LInear Regression)") + xlab("Level")+ ylab("Salary")
+ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(lin_reg, newdata = dataset)), color = "blue") + ggtitle("Workforce_Salary_Analysis(Linear_Regression)") + xlab("Level")+ ylab("Salary")
 
 y_pred = predict(lin_reg, data.frame(Level = 6.5))
 # Fitting Polynomial Regression to the dataset
@@ -29,6 +29,6 @@ dataset$Level3 = dataset$Level^3
 dataset$Level4 = dataset$Level^4
 poly_reg = lm(formula= Salary ~ ., data = dataset)
 # Visualizing the Polynomial Regression model
-ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(poly_reg, newdata = dataset)), color = "blue") + ggtitle("Truth or Bluff(POLY Regression)") + xlab("Level")+ ylab("Salary")
+ggplot() + geom_point(aes(x = dataset$Level, y= dataset$Salary), color = "red") + geom_line(aes(x = dataset$Level, y= predict(poly_reg, newdata = dataset)), color = "blue") + ggtitle("Workforce_Salary_Analysis(Polynomial_Regression)") + xlab("Level")+ ylab("Salary")
 
 y_pred = predict(poly_reg, data.frame(Level = 6.5,Level2 = 6.5^2,Level3=6.5^3,Level4=6.5^4))
