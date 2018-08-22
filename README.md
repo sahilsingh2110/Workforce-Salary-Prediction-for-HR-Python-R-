@@ -17,8 +17,11 @@ The dataset provides us with level number corresponding to the employee position
 #### Result - Model comparision
 
 Random Forest Salary Prediction value - $160,600.00
+
 Decision Tree Prediction value - $150,000.00
+
 SVR Prediction value - $170,370.02
+
 Polynomial Prediction value - $158,862
 
 Random forest and polynomial regression models provided best predictions. The salary value obtained from these 2 models was the closest to the test set data values. The 2 models were used predict salary for future employees by the HR department.
