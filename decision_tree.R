@@ -38,7 +38,7 @@ ggplot() +
              colour = 'red') +
   geom_line(aes(x = x_grid, y = predict(regressor, newdata = data.frame(Level = x_grid))),
             colour = 'blue') +
-  ggtitle('Truth or Bluff (Decision Tree Model)') +
+  ggtitle('Workforce_Salary_Analysis (Decision Tree Model)') +
   xlab('Level') +
   ylab('Salary')
 
