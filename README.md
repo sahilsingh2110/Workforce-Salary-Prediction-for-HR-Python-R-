@@ -29,4 +29,4 @@ SVR Prediction value - $170,370.02
 
 Polynomial Prediction value - $158,862
 
-Random forest and polynomial regression models provided best predictions. The salary value obtained from these 2 models was the closest to the test set data values. The 2 models were used predict salary for future employees by the HR department.
+Random forest and polynomial regression models provided best predictions. The salary value obtained from these 2 models was the closest to the test set data values. The 2 models were used to predict salary for future employees by the HR department.
