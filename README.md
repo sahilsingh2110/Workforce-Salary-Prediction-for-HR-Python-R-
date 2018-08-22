@@ -14,7 +14,7 @@ The dataset provides us with level number corresponding to the employee position
 
 
 
-## Result - Model comparision
+#### Result - Model comparision
 
 Random Forest Salary Prediction value - $160,600.00
 Decision Tree Prediction value - $150,000.00
